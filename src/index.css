@@ -1,0 +1,610 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*components stylings*/
+.Shoplink button{
+  color: black;
+  text-align: center;
+  width: 80px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+.Shoplink button:hover{
+  cursor: pointer;
+}
+.navigation h3{
+  color: black;
+
+}
+.navigation h3:hover{
+  color: white;
+}
+/*main styling*/
+
+.intro{
+  
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
+.intro ul{
+display: flex;
+gap: 10px;
+}
+.intro ul li{
+  list-style: none;
+word-spacing: 10px;
+}
+.intro h1{
+  color:rgb(124, 28, 28);
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bolder;
+}
+.intro ul a{
+  word-spacing: normal;
+  text-decoration: none;
+  color: black;
+}
+.intro ul li a:hover{
+color: chocolate;
+}
+.intro ul li a{
+  word-spacing: 10px;
+}
+
+.cover_img{
+  background-image: url(./images/cake\ 10.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.first{
+margin-bottom: 2rem;
+}
+.first button{
+  opacity: 50%;
+}
+.first button:hover{
+  color:chocolate;
+}
+.first section{
+text-align: left;
+margin-left: 1rem;
+padding: 6rem;
+
+}
+
+.second{
+display: flex;
+justify-content: center;
+margin-left: 1rem;
+margin-right: 1rem;
+gap: 50px;
+margin-bottom: 2rem;
+}
+.second section{
+  padding: 1%;
+}
+.second_slider{
+  background-color: white;
+width: 45%;
+
+}
+.second_link{
+  background-image:url(./images/cake\ 7.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 70%;
+  height: 300px;
+}
+.second_link_button{
+opacity: 50%;
+position: absolute;
+top: 87%;
+
+width: 100%;
+  text-align: center;
+cursor: pointer;
+
+}
+.second_link_button button:hover{
+  color: chocolate;
+}
+
+.second_slider_one{
+  background-image: url(./images/cake\ 10.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+height: 300px;
+}
+.second_slider_two{
+  background-image: url(./images/cake\ 11.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+height: 300px;
+}
+.second_slider_three{
+  background-image: url(./images/cake\ 9.jpg);
+
+  background-size: cover;
+height: 300px;
+background-position: center;
+  position: relative;
+}
+.second_slider h3{
+  font-family: cursive;
+  
+  
+}
+.second_slider p{
+  text-align: left;
+  position: absolute;
+  left: 10px;
+}
+.third{
+  display: flex;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  gap: 50px;
+  margin-bottom: 2rem;
+}
+.third_1{
+  background-color: white;
+  width: 50%;
+  position: relative;
+  
+}
+.third_1 h3{
+  font-family: cursive;
+}
+.third_1 p{
+  position: relative;
+  text-align: left;
+  left: 10px;
+}
+.third_slider_one{
+  background-image: url(./images/cake\ 19.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.third_slider_two{
+  background-image: url(./images/cake\ 17.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.third_slider_three{
+  background-image: url(./images/cake\ 18.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.third_2{
+  background-image: url(./images/cake\ 2.jpg);
+  background-size: cover;
+  background-position: center;
+  width:70% ;
+  height: 300px;
+  position: relative;
+}
+.third_2 .Shoplink{
+  opacity: 50%;
+  position: absolute;
+  top: 87%;
+  
+  width: 100%;
+    text-align: center;
+  cursor: pointer;
+  
+}
+.third_2 .Shoplink button:hover{
+  color:chocolate;
+}
+.fourth{
+  display: flex;
+  justify-content: center;
+  margin-bottom:2rem;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  gap: 10px;
+}
+.fourth_1{
+  background-image: url(./images/cake\ 12.jpg);
+  background-size: cover;
+width:100%;
+height: 200px;
+background-position: center;
+position: relative;
+}
+.fourth_1_text{
+  position: absolute;
+  font-family: cursive;
+  color: white;
+  top: 50%;
+  
+  width: 100%;
+    text-align: center;
+}
+.fourth_2{
+  background-image: url(./images/cake\ 15.jpg);
+  background-size: cover;
+  width:100%;
+  height:200px ;
+  background-position: center;
+  position: relative;
+}
+.fourth_2_text{
+  position: absolute;
+  font-family: cursive;
+  color: white;
+  top: 50%;
+  
+  width: 100%;
+    text-align: center;
+}
+.cakes{
+margin-left: 1rem;
+margin-right: 1rem;
+margin-bottom: 2rem;
+}
+.cakes img{
+  width: 170px;
+  height: 100px;
+  
+}
+.cakes_1, .cakes_2{
+  display: flex;
+  justify-content: space-between;
+
+
+}
+.cakes_1{
+  margin-bottom: 2rem;
+}
+.fifth button{
+  background-color: black;
+  opacity: 100%;
+  color: white;
+}
+.fifth button:hover{
+  color: chocolate;
+}
+.sixth video{
+float: left;
+  margin-right: 0.5rem;
+  
+  height:300px;
+  width:40%;
+}
+
+.sixth p{
+
+text-align: left;
+}
+.sixth_button{
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+
+}
+.sixth_button button{
+  background-color: black;
+  color: white;
+}
+.sixth_button button:hover{
+  color: chocolate;
+}
+.seventh{
+  margin: 2rem;
+text-align: center;
+
+}
+.seventh .card{
+
+
+
+  
+  text-align: center;
+}
+.card{
+  text-align: center;
+  box-shadow: 1px 12px 8px 5px #aaaaaa;
+  max-width: 300px;
+  height: 200px;
+  
+  border: 4px solid white;
+ margin: auto;
+ background-color: rgb(224, 43, 43);
+}
+
+.eight{
+  background-color: black;
+  height: 300px;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+#button{
+  position:absolute;
+  top: .75rem;
+  right: 1rem;
+  display:none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 21px;
+  
+}
+.bar{
+  width:100% ;
+  height:3px ;
+  background-color:white ;
+  border-radius: 10px;
+}
+.product_card1 img{
+  width: 100%;
+  height: 100px;
+}
+.product_card2 img{
+  width: 100%;
+  height: 100px;
+}
+.product_card1{
+  background-color: white;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  
+}
+.product_card2{
+  background-color: white;
+  width: 300px;
+  height: 200px;
+  
+}
+.product_card1 button{
+  background-color: red;
+  border-radius: 10px;
+  padding: auto;
+}
+.product_card1 button:hover{
+  background-color: green;
+}
+.product_container{
+  display: flex;
+  justify-content: space-around;
+  
+
+}
+.product_cover{
+  width: 100%;
+  background-color: grey;
+
+}
+.navigation{
+  text-align: right;
+display: flex;
+justify-content: space-between;
+  margin-bottom: 2rem;
+  background-color:chocolate;
+  height: 200px;
+  
+}
+.navigation h3{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.shop_cover{
+  background-color: grey;
+  position: relative;
+}
+
+
+.increment{
+  background-color: red;
+  width: 20px;
+  border-radius: 10px;
+  padding: auto;
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 0px;
+  right:0px;
+  text-align: center;
+}
+.em{
+  width: 300px;
+  height: auto;
+  background-color: pink;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.remove_p{
+  position:absolute;
+  left: 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+.remove_p:hover{
+  cursor: pointer;
+  color: black;
+}
+.em input{
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  background-color: chocolate;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+.em input:hover{
+  background-color: green;
+}
+.em p{
+  text-align: center;
+}
+.em img{
+  width: 50px;
+  height: 50px;
+}
+.outcast{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.off{
+  display: none;
+}
+.remove_button{
+  display: none;
+}
+@media only screen and (max-width: 317px){
+  .first section{
+padding: 3rem;
+  }
+  .intro h1{
+    font-size: 22px;
+  }
+  .second{
+    gap: 0px;
+    margin-left:0rem ;
+    margin-right: 0rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .second_link{
+width:150px;
+  }
+  .second_slider{
+    width:150px;
+  }
+  .third_1{
+width: 50%;
+  }
+  .third_2{
+    width: 45%;
+  }
+  .third{
+    margin-right:0rem ;
+    margin-left: 0rem;
+  }
+  .eight{
+    height: 120px;
+  }
+  
+  
+}
+@media only screen and (max-width: 350px){
+  .cakes_1{
+gap: 1%;
+  }
+  .cakes_1 img{
+    width: 100px;
+    height: 50px;
+  }
+  .cakes_2{
+gap: 1%;
+  }
+  .cakes_2 img{
+    width: 100px;
+    height: 50px;
+  }
+  
+}
+@media only screen and (max-width:326px){
+  .second{
+    margin-right: 0px;
+    margin-left: 0px;
+
+  }
+  .second_slider img{
+    background-position: none;
+  }
+  .third{
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
+    
+  }
+  .fourth{
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width:421px){
+  .second{
+    gap: 15px;
+  }
+  .second_slider{
+    background-color: white;
+  width: 45%;
+  
+  }
+  .second_link{
+    background-image:url(./images/cake\ 7.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 70%;
+    height: 300px;
+  }
+  .third{
+    gap: 10px;
+  }
+  .cakes img{
+    width: 50px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 700px){
+
+.sixth video{
+width: 45%;
+height: 395px
+}
+  .product_container{
+    gap: 10px;
+  }
+.fourth_1_text{
+  top: 25px;
+  
+  width: 100%;
+    text-align: center;
+}
+.fourth_2_text{
+  top: 25px;
+  
+  width: 100%;
+    text-align: center;
+}
+
+
+.cakes_1{
+  gap: 10px;
+}
+.cakes_2{
+  gap: 10px;
+}
+}
+
+
+  
