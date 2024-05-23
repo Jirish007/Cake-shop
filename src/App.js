@@ -45,7 +45,7 @@ function App() {
 <Slider {...testify}>
   <div className='second_slider_one'>
 <h3>Just for you</h3>
-<p>Our cakes are made to suit a wide variety of occassions.
+<p>Our cakes are made entirely to suit a wide variety of occassions.
   From your little one's birthday to an elderly person
 </p>
   </div>
