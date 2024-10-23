@@ -13,13 +13,21 @@
   border: none;
   border-radius: 10px;
 }
+
 .Shoplink button:hover{
   cursor: pointer;
 }
+
+.Homelink{
+  margin-left: 1rem;
+
+}
+
 .navigation h3{
   color: black;
 
 }
+
 .navigation h3:hover{
   color: white;
 }
@@ -34,14 +42,7 @@
 }
 
 
-.intro ul{
-display: flex;
-gap: 10px;
-}
-.intro ul li{
-  list-style: none;
-word-spacing: 10px;
-}
+
 .intro h1{
   color:rgb(124, 28, 28);
   text-transform: uppercase;
@@ -100,6 +101,7 @@ margin-bottom: 2rem;
 width: 45%;
 
 }
+/*second link*/
 .second_link{
   background-image:url(./images/cake\ 7.jpg);
   background-size: cover;
@@ -386,9 +388,12 @@ text-align: center;
   background-color: green;
 }
 .product_container{
-  display: flex;
-  justify-content: space-around;
-  
+  /*display: flex;
+  justify-content: space-around;*/
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 50px 50px;
 
 }
 .product_cover{
@@ -413,7 +418,11 @@ justify-content: space-between;
   background-color: grey;
   position: relative;
 }
-
+#shop{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 100px 50px;
+}
 
 .increment{
   background-color: red;
@@ -574,9 +583,26 @@ gap: 1%;
     width: 50px;
     height: 100px;
   }
+
+  .product_card1{
+    background-color: white;
+    width: 138px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    
+  }
+
 }
 @media only screen and (max-width: 700px){
-
+  .product_card1{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    
+  }
 .sixth video{
 width: 45%;
 height: 395px
@@ -605,6 +631,3 @@ height: 395px
   gap: 10px;
 }
 }
-
-
-  

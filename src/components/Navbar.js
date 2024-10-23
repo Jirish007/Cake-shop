@@ -1,12 +1,14 @@
-import { Link } from "react-router-dom";
-import Shoplink from "./Shoplink";
+import Navbarlink from "./Navbarlink";
+
 function Navbar(){
     return(
         <div className='cover_img'>
         <nav className='intro'>
         <section>
             <h1>Easy Bake</h1>
-         
+          </section>
+          <section>
+        <Navbarlink/>
           </section>
         </nav>
         <div className='first'>
@@ -15,7 +17,6 @@ function Navbar(){
           <br></br>
           <p>The resonance of cream and orange</p>
           <br></br>
-          <Shoplink/>
           </section>
         
         </div>
