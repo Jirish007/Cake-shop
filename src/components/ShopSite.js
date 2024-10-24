@@ -3,6 +3,7 @@ import shop1 from './shopping cakes/cake 12.jpg'
 import shop2 from './shopping cakes/cake 15.jpg'
 import shop3 from './shopping cakes/cake 19.jpg'
 import shop4 from './shopping cakes/cake 7.jpg'
+
 import Shoplink from "./Homelink";
 
 function ShopSite() {
@@ -64,7 +65,7 @@ function clickButton(id,photo,details,price){
     }
  function purchase() {
     alert("THANK YOU FOR PURCHASING")
-
+return false
  }
  function increaseNumberOfItems(inc,event){
     

@@ -558,6 +558,12 @@ gap: 1%;
     margin-right: 0px;
     margin-left: 0px;
   }
+  .product_card1{
+   
+    width: 120px;
+    
+    
+  }
 }
 @media only screen and (max-width:421px){
   .second{
