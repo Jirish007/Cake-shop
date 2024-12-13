@@ -2,7 +2,25 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+ 
+
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+#shopping_bag{
+  size: 70px;
+  font-size: 70px;
+}
+
 /*components stylings*/
 .Shoplink button{
   color: black;
@@ -35,63 +53,39 @@
 
 .intro{
   
-  display: flex;
-  justify-content: space-between;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
 
-
-
-.intro h1{
-  color:rgb(124, 28, 28);
-  text-transform: uppercase;
-  font-size: 36px;
-  font-weight: bolder;
-}
-.intro ul a{
-  word-spacing: normal;
-  text-decoration: none;
-  color: black;
-}
-.intro ul li a:hover{
-color: chocolate;
-}
-.intro ul li a{
-  word-spacing: 10px;
-}
-
-.cover_img{
+  
   background-image: url(./images/cake\ 10.jpg);
   background-size: cover;
   background-position: center;
-  height: 350px;
-  margin-bottom: 2rem;
+  height:325px;
+  margin-bottom: 1.5rem;
   position: relative;
-}
-.first{
-margin-bottom: 2rem;
-}
-.first button{
-  opacity: 50%;
-}
-.first button:hover{
-  color:chocolate;
-}
-.first section{
-text-align: left;
-margin-left: 1rem;
-padding: 6rem;
 
 }
+
+.intro_style{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
+.first{
+  position: absolute;
+  top: 80%;
+  left: .5rem;
+}
+
 
 .second{
 display: flex;
 justify-content: center;
-margin-left: 1rem;
-margin-right: 1rem;
+padding-left: 1rem;
+padding-right: 1rem;
 gap: 50px;
-margin-bottom: 2rem;
+margin-bottom: 1.5rem;
 }
 .second section{
   padding: 1%;
@@ -99,8 +93,17 @@ margin-bottom: 2rem;
 .second_slider{
   background-color: white;
 width: 45%;
+position: relative;
+right: -100vw;
+transition: right 1s ease-in-out;
 
 }
+
+.animate-right {
+  right: 0;
+}
+
+
 /*second link*/
 .second_link{
   background-image:url(./images/cake\ 7.jpg);
@@ -109,7 +112,23 @@ width: 45%;
   position: relative;
   width: 70%;
   height: 300px;
+
+  position: relative;
+  left: -100vw;
+  transition: left 1s ease-in-out;
+
 }
+
+.animate-left {
+  left: 0;
+}
+
+
+
+
+
+
+
 .second_link_button{
 opacity: 50%;
 position: absolute;
@@ -168,8 +187,16 @@ background-position: center;
   background-color: white;
   width: 50%;
   position: relative;
-  
+  position: relative;
+  left: -100vw;
+  transition: left 1s ease-in-out;
+
 }
+.animate2-left {
+  left: 0;
+}
+
+
 .third_1 h3{
   font-family: cursive;
 }
@@ -203,7 +230,20 @@ background-position: center;
   width:70% ;
   height: 300px;
   position: relative;
+  position: relative;
+  right: -100vw;
+  transition: right 1s ease-in-out;
+
+
+
 }
+.animate2-right {
+  right: 0;
+}
+
+
+
+
 .third_2 .Shoplink{
   opacity: 50%;
   position: absolute;
@@ -220,7 +260,7 @@ background-position: center;
 .fourth{
   display: flex;
   justify-content: center;
-  margin-bottom:2rem;
+
   margin-left: 0.2rem;
   margin-right: 0.2rem;
   gap: 10px;
@@ -232,6 +272,8 @@ width:100%;
 height: 200px;
 background-position: center;
 position: relative;
+  left: -100vw;
+  transition: left 1s ease-in-out;
 }
 .fourth_1_text{
   position: absolute;
@@ -249,13 +291,18 @@ position: relative;
   height:200px ;
   background-position: center;
   position: relative;
+  left: -100vw;
+  transition: left 1s ease-in-out;
 }
+.animate3-left {
+  left: 0;
+}
+
 .fourth_2_text{
   position: absolute;
   font-family: cursive;
   color: white;
   top: 50%;
-  
   width: 100%;
     text-align: center;
 }
@@ -272,26 +319,16 @@ margin-bottom: 2rem;
 .cakes_1, .cakes_2{
   display: flex;
   justify-content: space-between;
-
-
 }
 .cakes_1{
   margin-bottom: 2rem;
 }
-.fifth button{
-  background-color: black;
-  opacity: 100%;
-  color: white;
-}
-.fifth button:hover{
-  color: chocolate;
-}
+
+
 .sixth video{
-float: left;
   margin-right: 0.5rem;
-  
   height:300px;
-  width:40%;
+  width:90%;
 }
 
 .sixth p{
@@ -300,8 +337,8 @@ text-align: left;
 }
 .sixth_button{
   margin-top: 0.5rem;
-  margin-bottom: 2rem;
-
+  margin-bottom: 1.5rem;
+padding-left: 10px;
 }
 .sixth_button button{
   background-color: black;
@@ -316,10 +353,6 @@ text-align: center;
 
 }
 .seventh .card{
-
-
-
-  
   text-align: center;
 }
 .card{
@@ -327,7 +360,6 @@ text-align: center;
   box-shadow: 1px 12px 8px 5px #aaaaaa;
   max-width: 300px;
   height: 200px;
-  
   border: 4px solid white;
  margin: auto;
  background-color: rgb(224, 43, 43);
@@ -335,9 +367,9 @@ text-align: center;
 
 .eight{
   background-color: black;
-  height: 300px;
+  height: auto;
   text-align: center;
-  padding: 1rem;
+  padding: 10px;
   color: white;
 }
 #button{
@@ -370,8 +402,8 @@ text-align: center;
   width: 300px;
   height: 200px;
   margin-bottom: 10px;
-  border-radius: 10px;
-  
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 .product_card2{
   background-color: white;
@@ -388,12 +420,18 @@ text-align: center;
   background-color: green;
 }
 .product_container{
-  /*display: flex;
-  justify-content: space-around;*/
+ 
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
   gap: 50px 50px;
+
+
+
+}
+.product_card1:hover{
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 
 }
 .product_cover{
@@ -439,11 +477,22 @@ justify-content: space-between;
 .em{
   width: 300px;
   height: auto;
-  background-color: pink;
+  background-color: rgb(201, 68, 90);
+  
   text-align: center;
   display: flex;
   justify-content: center;
   position: relative;
+  transition: transform 0.3s ease-in-out;
+  
+
+
+}
+
+.em:hover{
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
 }
 .remove_p{
   position:absolute;
@@ -486,105 +535,69 @@ justify-content: space-between;
 .remove_button{
   display: none;
 }
-@media only screen and (max-width: 317px){
-  .first section{
-padding: 3rem;
-  }
-  .intro h1{
-    font-size: 22px;
-  }
-  .second{
-    gap: 0px;
-    margin-left:0rem ;
-    margin-right: 0rem;
-    display: flex;
-    justify-content: center;
-  }
-
+.sixth{
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width:375px){
   .second_link{
-width:150px;
+width: 75%;
+
   }
   .second_slider{
-    width:150px;
+    width: 45%;
+   
+  }
+  .second{
+    gap: 2%;
+  }
+  .third{
+    gap: 3%;
+  }
+}
+
+@media only screen and (max-width: 323px){
+ .sixth{
+ flex-direction: column;}
+  .sixth video{
+    
+    height: 395px;
+  width:230px ;
+  text-align: center;
+    }
+    .sixth p{
+    padding: 5px;
+
+    }
+  .second,.third,.fourth{
+    flex-direction: column;
+  }
+  .second_link{
+    width: 100%;
+  margin-bottom: 0.5rem;
+  padding-left: 3px;
+  margin-right: 3px;
+  }
+  .second_slider{
+width: 100%;
+
   }
   .third_1{
-width: 50%;
+    width: 100%;
+    margin-bottom: 0.5rem;
   }
   .third_2{
-    width: 45%;
-  }
-  .third{
-    margin-right:0rem ;
-    margin-left: 0rem;
-  }
-  .eight{
-    height: 120px;
-  }
-  
-  
-}
-@media only screen and (max-width: 350px){
-  .cakes_1{
-gap: 1%;
-  }
-  .cakes_1 img{
-    width: 100px;
-    height: 50px;
-  }
-  .cakes_2{
-gap: 1%;
-  }
-  .cakes_2 img{
-    width: 100px;
-    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
 }
-@media only screen and (max-width:326px){
-  .second{
-    margin-right: 0px;
-    margin-left: 0px;
 
-  }
-  .second_slider img{
-    background-position: none;
-  }
-  .third{
-    margin-right: 0.2rem;
-    margin-left: 0.2rem;
-    
-  }
-  .fourth{
-    margin-right: 0px;
-    margin-left: 0px;
-  }
-  .product_card1{
-   
-    width: 120px;
-    
-    
-  }
-}
+
 @media only screen and (max-width:421px){
-  .second{
-    gap: 15px;
-  }
-  .second_slider{
-    background-color: white;
-  width: 45%;
   
-  }
-  .second_link{
-    background-image:url(./images/cake\ 7.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    width: 70%;
-    height: 300px;
-  }
-  .third{
-    gap: 10px;
-  }
+  
   .cakes img{
     width: 50px;
     height: 100px;
@@ -609,10 +622,7 @@ gap: 1%;
     border-radius: 10px;
     
   }
-.sixth video{
-width: 45%;
-height: 395px
-}
+
   .product_container{
     gap: 10px;
   }

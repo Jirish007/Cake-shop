@@ -123,12 +123,16 @@ let buttonExtra = <form onSubmit={purchase}><input type="submit" value={subvalue
     <div className="shop_cover">
         <div className="navigation">
           <h3> <Shoplink/></h3>
-    <h3 onClick={clickToggle}>
-CART: <font color="white">{increment}</font>
+    <h3 >
+    <span class="material-symbols-outlined" id="shopping_bag"  onClick={clickToggle} >
+shopping_bag
+</span><font color="white">{increment}</font>
     
     </h3>
    
 </div>
+
+<div className="insideCart">
 <div className="outcast">
     
     {toggle? mapped: <></>}
@@ -136,6 +140,7 @@ CART: <font color="white">{increment}</font>
         {increment === 0 ? "" :buttonExtra}
     </div>
 
+</div>
 </div>
 <div className="product_cover">
 <div className="product_container">
@@ -161,6 +166,7 @@ CART: <font color="white">{increment}</font>
     <h2>More cakes coming soon...</h2>
 </div>
     </div>
+
 );
 };
 export default ShopSite;

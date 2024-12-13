@@ -43,6 +43,7 @@ function Navigation() {
   };
     return(
         <>
+        <div className='seventh'>
         <h3>Testimonials</h3>
       <Slider {...settings}>
         
@@ -83,6 +84,7 @@ function Navigation() {
           <h3>Rishvi Kuthra</h3>
          </div>
       </Slider>
+      </div>
         </>
 
     );
