@@ -238,7 +238,7 @@ text-align: center;
 }
 }
 
-button { font-size: 0.8em; /* Decreased button size */ padding: 6px 12px; margin: 5px; transition: transform 0.2s, background-color 0.3s; /* Added transition for background color */ border: 1px solid #ccc; /* Smaller border */ border-radius: 3px; /* Smaller border radius */ background-color: #f3e5ab; /* Soft vanilla color for buttons */ color: #333; /* Darker text color for contrast */ cursor: pointer; } button:hover { background-color: #e0d4a1; /* Slightly darker shade for hover effect */ } button:active { animation: bounce 0.5s; } @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-20px); } 60% { transform: translateY(-10px); } }
+
 
 
 
