@@ -9,7 +9,7 @@ const BankingDetails= lazy(()=>import("./components/BankingDetails"))
 function App() {
   return (
     <BrowserRouter>
-    <Suspense fallback={<h1>Loading...</h1>}>
+    <Suspense fallback={<h1></h1>}>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path='shopsite' element={<Shopsite/>}></Route>
