@@ -1,7 +1,7 @@
 // BankingDetails.js
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-
+import './stylings/banking.css'
 function BankingDetails() {
     const location = useLocation();
     const { totalPrice } = location.state || { totalPrice: 0 }; // Receive total price from state
@@ -13,6 +13,7 @@ function BankingDetails() {
     };
 
     return (
+        <div className='banking_body'>
         <div className="banking-form-container">
             <h2>Checkout</h2>
             <h3>Total Price: R{totalPrice}</h3> {/* Display the total price */}
@@ -47,6 +48,7 @@ function BankingDetails() {
                     <button type="submit">Submit</button>
                 </form>
             </div>
+        </div>
         </div>
     );
 }

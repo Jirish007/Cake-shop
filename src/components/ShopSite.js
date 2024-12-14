@@ -6,7 +6,7 @@ import shop3 from './shopping cakes/cake 19.jpg';
 import shop4 from './shopping cakes/cake 7.jpg';
 
 import Shoplink from "./Homelink";
-
+import './stylings/shopping.css'
 
 function ShopSite() {
     let [increment, setIncrement] = useState(0);

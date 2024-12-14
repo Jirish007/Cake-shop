@@ -1,0 +1,193 @@
+
+/*THIS IS THE STYLING FOR THE SECOND PART OF THE WEBSITE*/
+.second{
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 50px;
+    margin-bottom: 1.5rem;
+    }
+    .second section{
+      padding: 1%;
+    }
+    .second_slider{
+      background-color: white;
+    width: 45%;
+    
+    }
+    
+    
+    
+    
+    
+    .second_link{
+      /*background-image:url(./images/cake\ 7.jpg);*/
+      background-image: url(/src/images/cake\ 7.jpg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      width: 70%;
+      height: 300px;
+    
+      position: relative;
+      
+    
+    }
+    
+    
+    .second_link_button{
+    opacity: 50%;
+    position: absolute;
+    top: 87%;
+    width: 100%;
+      text-align: center;
+    cursor: pointer;
+    }
+    .second_link_button button:hover{
+      color: chocolate;
+    }
+    
+    .second_slider_one{
+      background-image: url(/src/images/cake\ 10.jpg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    height: 300px;
+    }
+    .second_slider_two{
+      background-image: url(/src/images/cake\ 11.jpg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    height: 300px;
+    }
+    .second_slider_three{
+      background-image: url(/src/images/cake\ 9.jpg);
+    
+      background-size: cover;
+    height: 300px;
+    background-position: center;
+      position: relative;
+    }
+    .second_slider h3{
+      font-family: cursive;
+    }
+    .second_slider p{
+      text-align: left;
+      position: absolute;
+      left: 10px;
+    }
+    
+    /*THIS IS THE STYLING FOR THE THIRD PART OF THE WEBSITE*/
+    .third{
+      display: flex;
+      justify-content: center;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      gap: 50px;
+      margin-bottom: 2rem;
+    }
+    .third_1{
+      background-color: white;
+      width: 50%;
+      position: relative;
+      
+    
+    }
+    
+    .third_1 h3{
+      font-family: cursive;
+    }
+    .third_1 p{
+      position: relative;
+      text-align: left;
+      left: 10px;
+    }
+    .third_slider_one{
+      background-image: url(/src/images/cake\ 19.jpg);
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+    }
+    .third_slider_two{
+      background-image: url(/src/images/cake\ 17.jpg);
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+    }
+    .third_slider_three{
+      background-image: url(/src/images/cake\ 18.jpg);
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+    }
+    .third_2{
+      background-image: url(/src/images/cake\ 2.jpg);
+      background-size: cover;
+      background-position: center;
+      width:70% ;
+      height: 300px;
+      position: relative;
+     
+    }
+    
+    .third_2 .Shoplink{
+      opacity: 50%;
+      position: absolute;
+      top: 87%;
+      
+      width: 100%;
+        text-align: center;
+      cursor: pointer;
+      
+    }
+    .third_2 .Shoplink button:hover{
+      color:chocolate;
+    }
+    
+    @media only screen and (max-width:375px){
+      .second_link{
+    width: 75%;
+    
+      }
+      .second_slider{
+        width: 45%;
+       
+      }
+      .second{
+        gap: 2%;
+      }
+      .third{
+        gap: 3%;
+      }
+  
+    }
+    
+    @media only screen and (max-width: 323px){
+     
+      .second,.third{
+        flex-direction: column;
+      }
+      .second_link{
+        width: 100%;
+      margin-bottom: 0.5rem;
+      padding-left: 3px;
+      margin-right: 3px;
+      }
+      .second_slider{
+    width: 100%;
+    
+      }
+      .third_1{
+        width: 100%;
+        margin-bottom: 0.5rem;
+      }
+      .third_2{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+    
+    

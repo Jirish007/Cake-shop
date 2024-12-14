@@ -47,14 +47,7 @@
 
 }
 
-.navigation h3{
-  color: black;
 
-}
-
-.navigation h3:hover{
-  color: white;
-}
 /*THIS IS THE NAV STYLING*/
 
 .intro{
@@ -80,169 +73,6 @@ height: 200px;
   position: absolute;
   top: 80%;
   left: .5rem;
-}
-
-/*THIS IS THE STYLING FOR THE SECOND PART OF THE WEBSITE*/
-.second{
-display: flex;
-justify-content: center;
-padding-left: 1rem;
-padding-right: 1rem;
-gap: 50px;
-margin-bottom: 1.5rem;
-}
-.second section{
-  padding: 1%;
-}
-.second_slider{
-  background-color: white;
-width: 45%;
-position: relative;
-right: -100vw;
-transition: right 1s ease-in-out;
-
-}
-
-.animate-right {
-  right: 0;
-}
-
-
-
-.second_link{
-  background-image:url(./images/cake\ 7.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  width: 70%;
-  height: 300px;
-
-  position: relative;
-  left: -100vw;
-  transition: left 1s ease-in-out;
-
-}
-
-.animate-left {
-  left: 0;
-}
-
-.second_link_button{
-opacity: 50%;
-position: absolute;
-top: 87%;
-width: 100%;
-  text-align: center;
-cursor: pointer;
-}
-.second_link_button button:hover{
-  color: chocolate;
-}
-
-.second_slider_one{
-  background-image: url(./images/cake\ 10.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-height: 300px;
-}
-.second_slider_two{
-  background-image: url(./images/cake\ 11.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-height: 300px;
-}
-.second_slider_three{
-  background-image: url(./images/cake\ 9.jpg);
-
-  background-size: cover;
-height: 300px;
-background-position: center;
-  position: relative;
-}
-.second_slider h3{
-  font-family: cursive;
-}
-.second_slider p{
-  text-align: left;
-  position: absolute;
-  left: 10px;
-}
-
-/*THIS IS THE STYLING FOR THE THIRD PART OF THE WEBSITE*/
-.third{
-  display: flex;
-  justify-content: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  gap: 50px;
-  margin-bottom: 2rem;
-}
-.third_1{
-  background-color: white;
-  width: 50%;
-  position: relative;
-  position: relative;
-  left: -100vw;
-  transition: left 1s ease-in-out;
-
-}
-.animate2-left {
-  left: 0;
-}
-.third_1 h3{
-  font-family: cursive;
-}
-.third_1 p{
-  position: relative;
-  text-align: left;
-  left: 10px;
-}
-.third_slider_one{
-  background-image: url(./images/cake\ 19.jpg);
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-}
-.third_slider_two{
-  background-image: url(./images/cake\ 17.jpg);
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-}
-.third_slider_three{
-  background-image: url(./images/cake\ 18.jpg);
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-}
-.third_2{
-  background-image: url(./images/cake\ 2.jpg);
-  background-size: cover;
-  background-position: center;
-  width:70% ;
-  height: 300px;
-  position: relative;
-  position: relative;
-  right: -100vw;
-  transition: right 1s ease-in-out;
-}
-.animate2-right {
-  right: 0;
-}
-.third_2 .Shoplink{
-  opacity: 50%;
-  position: absolute;
-  top: 87%;
-  
-  width: 100%;
-    text-align: center;
-  cursor: pointer;
-  
-}
-.third_2 .Shoplink button:hover{
-  color:chocolate;
 }
 
 
@@ -330,73 +160,8 @@ text-align: center;
   background-color:white ;
   border-radius: 10px;
 }
-.product_card1 img{
-  width: 100%;
-  height: 100px;
-}
-.product_card2 img{
-  width: 100%;
-  height: 100px;
-}
-.product_card1{
-  background-color: white;
-  width: 300px;
-  height: 200px;
-  margin-bottom: 10px;
-  border-radius: 20px;
-  transition: transform 0.3s ease-in-out;
-}
-.product_card2{
-  background-color: white;
-  width: 300px;
-  height: 200px;
-  
-}
-.product_card1 button{
-  background-color:chocolate;
-  border-radius: 10px;
-  padding: auto;
-}
-.product_card1 button:hover{
-  background-color: grey;
-}
-.product_container{
- 
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
-  gap: 50px 50px;
 
 
-
-}
-.product_card1:hover{
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-
-}
-.product_cover{
-  width: 100%;
-  background-color: grey;
-
-}
-.navigation{
-  text-align: right;
-display: flex;
-justify-content: space-between;
-  margin-bottom: 2rem;
-  background-color:chocolate;
-  height: 200px;
-  
-}
-.navigation h3{
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-.shop_cover{
-  background-color: grey;
-  position: relative;
-}
 #shop{
   display: grid;
   grid-template-columns: auto auto;
@@ -415,91 +180,20 @@ justify-content: space-between;
   right:0px;
   text-align: center;
 }
-.em{
-  width: 300px;
-  height: auto;
-  background-color: rgb(201, 68, 90);
-  
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  transition: transform 0.3s ease-in-out;
-  
 
 
-}
 
-.em:hover{
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-
-}
-.remove_p{
-  position:absolute;
-  left: 5px;
-  background-color: white;
-  border-radius: 5px;
-}
-.remove_p:hover{
-  cursor: pointer;
-  color: black;
-}
-.em input{
-  position: relative;
-  bottom: 0;
-  text-align: center;
-  background-color: chocolate;
-  color: white;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  margin-top: 3rem;
-}
-.em input:hover{
-  background-color: green;
-}
-.em p{
-  text-align: center;
-}
-.em img{
-  width: 50px;
-  height: 50px;
-}
-.outcast{
-  position: absolute;
-  top: 0;
-  right: 0;
-}
 .off{
   display: none;
 }
-.remove_button{
-  display: none;
-}
+
 .sixth{
   display: flex;
   justify-content: center;
 }
 @media only screen and (max-width:375px){
-  .second_link{
-width: 75%;
-
-  }
-  .second_slider{
-    width: 45%;
-   
-  }
-  .second{
-    gap: 2%;
-  }
-  .third{
-    gap: 3%;
-  }
  
-  .product_container{
-    grid-template-columns: auto;
-    gap: 10px 10px;
-  }
+
 }
 
 @media only screen and (max-width: 323px){
@@ -515,41 +209,11 @@ width: 75%;
     padding: 5px;
 
     }
-  .second,.third{
-    flex-direction: column;
-  }
-  .second_link{
-    width: 100%;
-  margin-bottom: 0.5rem;
-  padding-left: 3px;
-  margin-right: 3px;
-  }
-  .second_slider{
-width: 100%;
-
-  }
-  .third_1{
-    width: 100%;
-    margin-bottom: 0.5rem;
-  }
-  .third_2{
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .product_card1{
-    width: 100px;
-  }
-
-  .product_container{
-    grid-template-columns: auto;
-    gap: 10px 10px;
-  }
+  
+  
 
 
-
-
-
+ 
 }
 
 
@@ -561,30 +225,9 @@ width: 100%;
     height: 100px;
   }
 
-  .product_card1{
-    background-color: white;
-    width: 138px;
-    height: 200px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    
-  }
-
 }
 @media only screen and (max-width: 700px){
-  .product_card1{
-    background-color: white;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    
-  }
-
-  .product_container{
-    gap: 10px;
-  }
-
+  
 
 
 .cakes_1{
@@ -598,63 +241,8 @@ width: 100%;
 button { font-size: 0.8em; /* Decreased button size */ padding: 6px 12px; margin: 5px; transition: transform 0.2s, background-color 0.3s; /* Added transition for background color */ border: 1px solid #ccc; /* Smaller border */ border-radius: 3px; /* Smaller border radius */ background-color: #f3e5ab; /* Soft vanilla color for buttons */ color: #333; /* Darker text color for contrast */ cursor: pointer; } button:hover { background-color: #e0d4a1; /* Slightly darker shade for hover effect */ } button:active { animation: bounce 0.5s; } @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-20px); } 60% { transform: translateY(-10px); } }
 
 
-/* BankingDetails.css */
-.banking-form-container {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
-}
 
-.banking-form-container h2 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.banking-form-container h3 {
-  color: #555;
-  margin-bottom: 15px;
-}
-
-.banking-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.banking-form form label {
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
-  color: #444;
-}
-
-.banking-form form input {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-top: 5px;
-}
-
-.banking-form form button {
-  padding: 10px 15px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.banking-form form button:hover {
-  background-color: #0056b3;
-}
-/* styles.css */
+/*THIS IS THE ANIMATION FOR THE CART ICON*/
 @keyframes gradientAnimation {
   0% {
       background-position: 0% 50%;
@@ -668,7 +256,7 @@ button { font-size: 0.8em; /* Decreased button size */ padding: 6px 12px; margin
 }
 
 .gradient-icon {
-  background: linear-gradient(45deg, #ff6ec4, #7873f5, #1fd1f9, #00ffaf);
+  background: linear-gradient(45deg, #ff6ec4, #eccd67, #1fd1f9, #55ffc9);
   background-size: 300% 300%;
   animation: gradientAnimation 10s ease infinite;
   background-clip: text;
