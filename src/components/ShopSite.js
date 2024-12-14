@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom"; // Use useNavigate instead of useHistory
 import shop1 from './shopping cakes/cake 12.jpg';
 import shop2 from './shopping cakes/cake 15.jpg';
 import shop3 from './shopping cakes/cake 19.jpg';
@@ -20,8 +21,9 @@ function ShopSite() {
         {id: 4, photo: shop4, details: "Lemon cake", price: 87}
     ]);
 
+    const navigate = useNavigate(); // Initialize useNavigate
+
     useEffect(() => {
-        // Load cart state from local storage
         const savedCartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
         const savedQuantity = JSON.parse(localStorage.getItem("quantity")) || {};
         const savedIncrement = parseInt(localStorage.getItem("increment"), 10) || 0;
@@ -32,14 +34,12 @@ function ShopSite() {
     }, []);
 
     useEffect(() => {
-        // Save cart state to local storage
         localStorage.setItem("cartItems", JSON.stringify(cartItems));
         localStorage.setItem("quantity", JSON.stringify(quantity));
         localStorage.setItem("increment", increment);
     }, [cartItems, quantity, increment]);
 
     function cart(id, photo, details, price) {
-        // Check if the item is already in the cart
         if (cartItems.some((item) => item.id === id)) {
             alert("This item is already in the cart");
             return;
@@ -55,11 +55,6 @@ function ShopSite() {
         setCartItems([...cartItems, {id, photo, details, price}]);
 
         setToggle(false);
-    }
-
-    function purchase() {
-        alert("THANK YOU FOR PURCHASING");
-        return false;
     }
 
     function increaseNumberOfItems(id) {
@@ -87,6 +82,12 @@ function ShopSite() {
         setQuantity({...quantity, [id]: 0});
     }
 
+    function handleCheckout(event) {
+        event.preventDefault();
+        const totalPrice = calculateTotalPrice();
+        navigate("/checkout", { state: { totalPrice } }); // Pass total price as state
+    }
+
     const calculateTotalPrice = () => {
         return cartItems.reduce((total, item) => {
             return total + (item.price * (quantity[item.id] || 0));
@@ -110,19 +111,19 @@ function ShopSite() {
     ));
 
     let subvalue = "CHECKOUT";
-    let buttonExtra = <form onSubmit={purchase}><input type="submit" value={subvalue}></input></form>;
+    let buttonExtra = <form onSubmit={handleCheckout}><input type="submit" value={subvalue}></input></form>;
 
     return (
         <div className="shop_cover">
             <div className="navigation">
                 <h3><Shoplink /></h3>
                 <h3>
-                    <span className="material-symbols-outlined" id="shopping_bag" onClick={clickToggle}>
+                    <span className="material-symbols-outlined gradient-icon" id="shopping_bag" onClick={clickToggle}>
                         shopping_bag
                     </span><font color="white">{increment}</font>
                 </h3>
             </div>
-            <div className="insideCart">
+            <div className={`insideCart ${toggle ? 'gradient-background' : ''}`}>
                 <div className="outcast">
                     {toggle ? mapped : <></>}
                     <div className={toggle ? "em" : "remove_button"}>
@@ -153,4 +154,3 @@ function ShopSite() {
 }
 
 export default ShopSite;
-

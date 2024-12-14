@@ -1,6 +1,6 @@
 import Navbarlink from "./Navbarlink";
 
-
+import Logo from './components images/myPhoto_2024_12_14_12_42_13.png'
  
 
 
@@ -13,7 +13,7 @@ function Navbar(){
         <nav className='intro'>
           <div className="intro_style">
         <section>
-            <h1>Easy Bake</h1>
+            <img src={Logo}></img>
           </section>
           <section>
         <Navbarlink/>

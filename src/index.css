@@ -19,6 +19,12 @@
 #shopping_bag{
   size: 70px;
   font-size: 70px;
+  color: white;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5, #1fd1f9, #00ffaf);
+  background-size: 300% 300%;
+  animation: gradientAnimation 10s ease infinite;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*THIS IS FOR THE SHOPSITE.JS COMPONENT*/
@@ -52,14 +58,19 @@
 /*THIS IS THE NAV STYLING*/
 
 .intro{
-  background-image: url(./images/cake\ 10.jpg);
+  /*background-image: url(./images/cake\ 10.jpg);*/
+  background-color: black;
   background-size: cover;
   background-position: center;
   height:325px;
   margin-bottom: 1.5rem;
   position: relative;
+  color: white;
 }
-
+.intro img{
+width: 200px;
+height: 200px;
+}
 .intro_style{
   display: flex;
   justify-content: space-around;
@@ -234,55 +245,8 @@ background-position: center;
   color:chocolate;
 }
 
-/*THIS IS THE STYLING FOR THE OURTH PART OF THE SECTION*/
-.fourth{
-  display: flex;
-  justify-content: center;
-  margin-left: 0.2rem;
-  margin-right: 0.2rem;
-  gap: 10px;
-}
-.fourth_1{
-  background-image: url(./images/cake\ 12.jpg);
-  background-size: cover;
-width:100%;
-height: 200px;
-background-position: center;
-position: relative;
-  left: -100vw;
-  transition: left 1s ease-in-out;
-}
-.fourth_1_text{
-  position: absolute;
-  font-family: cursive;
-  color: white;
-  top: 50%;
-  
-  width: 100%;
-    text-align: center;
-}
-.fourth_2{
-  background-image: url(./images/cake\ 15.jpg);
-  background-size: cover;
-  width:100%;
-  height:200px ;
-  background-position: center;
-  position: relative;
-  left: -100vw;
-  transition: left 1s ease-in-out;
-}
-.animate3-left {
-  left: 0;
-}
 
-.fourth_2_text{
-  position: absolute;
-  font-family: cursive;
-  color: white;
-  top: 50%;
-  width: 100%;
-    text-align: center;
-}
+
 .cakes{
 margin-left: 1rem;
 margin-right: 1rem;
@@ -551,7 +515,7 @@ width: 75%;
     padding: 5px;
 
     }
-  .second,.third,.fourth{
+  .second,.third{
     flex-direction: column;
   }
   .second_link{
@@ -620,18 +584,7 @@ width: 100%;
   .product_container{
     gap: 10px;
   }
-.fourth_1_text{
-  top: 25px;
-  
-  width: 100%;
-    text-align: center;
-}
-.fourth_2_text{
-  top: 25px;
-  
-  width: 100%;
-    text-align: center;
-}
+
 
 
 .cakes_1{
@@ -643,3 +596,82 @@ width: 100%;
 }
 
 button { font-size: 0.8em; /* Decreased button size */ padding: 6px 12px; margin: 5px; transition: transform 0.2s, background-color 0.3s; /* Added transition for background color */ border: 1px solid #ccc; /* Smaller border */ border-radius: 3px; /* Smaller border radius */ background-color: #f3e5ab; /* Soft vanilla color for buttons */ color: #333; /* Darker text color for contrast */ cursor: pointer; } button:hover { background-color: #e0d4a1; /* Slightly darker shade for hover effect */ } button:active { animation: bounce 0.5s; } @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-20px); } 60% { transform: translateY(-10px); } }
+
+
+/* BankingDetails.css */
+.banking-form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.banking-form-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.banking-form-container h3 {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.banking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.banking-form form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #444;
+}
+
+.banking-form form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.banking-form form button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.banking-form form button:hover {
+  background-color: #0056b3;
+}
+/* styles.css */
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.gradient-icon {
+  background: linear-gradient(45deg, #ff6ec4, #7873f5, #1fd1f9, #00ffaf);
+  background-size: 300% 300%;
+  animation: gradientAnimation 10s ease infinite;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes popUp { 0% { transform: scale(0); opacity: 0; } 100% { transform: scale(1); opacity: 1; } } .pop-up { opacity: 0; transform: scale(0); animation: popUp 0.2s forwards ease-in; }
