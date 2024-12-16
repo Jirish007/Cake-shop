@@ -123,7 +123,8 @@ function ShopSite() {
     return (
         <div className="shop_cover">
             <div className="navigation">
-                <h3><Shoplink /></h3>
+
+                <Shoplink />
                 <h3>
                     <span className="material-symbols-outlined gradient-icon" id="shopping_bag" onClick={clickToggle}>
                         shopping_bag
