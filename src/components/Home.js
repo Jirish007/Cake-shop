@@ -7,29 +7,26 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Cakes from './Cakes';
 const Testimonial = lazy(() => import("./Testimonial"));
-const Recipe = lazy(() => import("./Recipe"));
 
 function Home() {
-   
-    return (
-        <>
-        <div className="App">
-            <Navbar />
-            
-            <Cakes/>
-            
-            <Suspense fallback={<h1></h1>}>
-                <Recipe />
-            </Suspense>
-            <Suspense fallback={<h1></h1>}>
-                <Testimonial />
-            </Suspense>
-          
-          <Footer/>
-        
-        </div>
-        </>
-    );
+ 
+return (
+<>
+<div className="App">
+<Navbar />
+
+<Cakes/>
+
+ 
+<Suspense fallback={<h1></h1>}>
+<Testimonial />
+</Suspense>
+
+<Footer/>
+
+</div>
+</>
+);
 }
 
 export default Home;

@@ -1,6 +1,6 @@
-// filepath: /c:/Users/giris/Documents/Coding projects/Frontend developer/Easy bake/server.js
+// filepath: /c:/Users/giris/Documents/Coding projects/Frontend developer/Easy bake/backend/server.js
 const express = require('express');
-const mongoose = require('mongoose');
+const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
@@ -11,37 +11,35 @@ const port = 5000;
 app.use(bodyParser.json());
 app.use(cors());
 
-// MongoDB connection
-const mongoURI = 'mongodb+srv://girishtibatina:girishtibatina@easybake.1lw5u.mongodb.net/';
-mongoose.connect(mongoURI);
-
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', () => {
-    console.log('Connected to MongoDB');
+// MySQL connection
+const db = mysql.createConnection({
+host: 'localhost', // Replace with your MySQL host
+user: 'root', // Replace with your MySQL username
+password: 'password', // Replace with your MySQL password
+database: 'easybake' // Replace with your MySQL database name
 });
 
-// Banking details schema
-const bankingSchema = new mongoose.Schema({
-    accountName: String,
-    bankName: String,
-    accountNumber: String,
-    branchCode: String,
-    swiftCode: String,
-    totalPrice: Number
+db.connect((err) => {
+if (err) {
+console.error('Error connecting to MySQL:', err);
+return;
+}
+console.log('Connected to MySQL');
 });
-
-const Banking = mongoose.model('Banking', bankingSchema);
 
 // Routes
 app.post('/api/banking', (req, res) => {
-    const newBanking = new Banking(req.body);
-    newBanking.save((err, banking) => {
-        if (err) return res.status(500).send(err);
-        return res.status(200).send(banking);
-    });
+const { accountName, bankName, accountNumber, branchCode, swiftCode, totalPrice } = req.body;
+const query = 'INSERT INTO banking_details (accountName, bankName, accountNumber, branchCode, swiftCode, totalPrice) VALUES (?, ?, ?, ?, ?, ?)';
+db.query(query, [accountName, bankName, accountNumber, branchCode, swiftCode, totalPrice], (err, result) => {
+if (err) {
+console.error('Error inserting data into MySQL:', err);
+return res.status(500).send(err);
+}
+res.status(200).send('Banking details submitted successfully!');
+});
 });
 
 app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+console.log(`Server running on port ${port}`);
 });
