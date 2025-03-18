@@ -3,7 +3,7 @@ const express = require('express');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-
+require('dotenv').config()
 const app = express();
 const port = 5000;
 
@@ -13,10 +13,10 @@ app.use(cors());
 
 // MySQL connection
 const db = mysql.createConnection({
-host: 'localhost', // Replace with your MySQL host
-user: 'root', // Replace with your MySQL username
-password: 'password', // Replace with your MySQL password
-database: 'easybake' // Replace with your MySQL database name
+host: process.env.DB_HOST, // Replace with your MySQL host
+user: process.env.DB_USER, // Replace with your MySQL username
+password:process.env.DB_PASSWORD, // Replace with your MySQL password
+database:process.env.DB_DATABASE // Replace with your MySQL database name
 });
 
 db.connect((err) => {
