@@ -1,4 +1,4 @@
-import Logo from './components images/myPhoto_2024_12_14_12_42_13.png'
+import Logo from './components images/myPhoto_2024_12_14_12_42_13.webp'
 import {Link } from "react-router-dom";
 function Shoplink() {
 

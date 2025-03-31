@@ -17,8 +17,8 @@ width: 45%;
 
 }
 .second_link{
-/*background-image:url(./images/cake\ 7.jpg);*/
-background-image: url(/src/images/cake\ 7.jpg);
+/*background-image:url(./images/cake\ 7.webp);*/
+background-image: url(/src/images/cake\ 7.webp);
 background-size: cover;
 background-position: center;
 position: relative;
@@ -44,7 +44,7 @@ color: chocolate;
 }
 
 .second_slider_one{
-background-image: url(/src/images/cake\ 10.jpg);
+background-image: url(/src/images/cake\ 10.webp);
 background-size: cover;
 background-position: center;
 position: relative;
@@ -85,20 +85,20 @@ text-align: left;
 left: 10px;
 }
 .third_slider_one{
-background-image: url(/src/images/cake\ 19.jpg);
+background-image: url(/src/images/cake\ 19.webp);
 height: 300px;
 background-size: cover;
 background-position: center;
 }
 .third_slider_two{
-background-image: url(/src/images/cake\ 17.jpg);
+background-image: url(/src/images/cake\ 17.webp);
 height: 300px;
 background-size: cover;
 background-position: center;
 }
 
 .third_2{
-background-image: url(/src/images/cake\ 2.jpg);
+background-image: url(/src/images/cake\ 2.webp);
 background-size: cover;
 background-position: center;
 width:70% ;

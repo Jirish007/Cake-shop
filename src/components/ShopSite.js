@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom"; 
-import shop1 from './shopping cakes/cake 12.jpg';
-import shop2 from './shopping cakes/cake 15.jpg';
-import shop3 from './shopping cakes/cake 19.jpg';
-import shop4 from './shopping cakes/cake 7.jpg';
+import shop1 from './shopping cakes/cake 12.webp';
+import shop2 from './shopping cakes/cake 15.webp';
+import shop3 from './shopping cakes/cake 19.webp';
+import shop4 from './shopping cakes/cake 7.webp';
 
 import Shoplink from "./Homelink";
 import './stylings/shopping.css';
